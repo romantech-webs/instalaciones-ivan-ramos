@@ -1,307 +1,359 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Instalaciones Iván Ramos",
+  logo: "/images/logo.png",
+  tagline: "Electricista y fontanero en Albacete - Servicio rápido",
+  description: "Instalaciones Iván Ramos es tu electricista y fontanero de confianza en Albacete. Con 5 estrellas y 63 reseñas en Google, ofrecemos servicio inmediato en instalaciones eléctricas, fontanería, reformas integrales, climatización y cerrajería. Profesionales serios, rápidos y con precios razonables que se desplazan a tu domicilio para solucionar cualquier avería o realizar tu proyecto.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#fb0e03",
+    secondary: "#4b0401",
+    accent: "#c90a00",
+    neutral: "#ffeceb"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "608 99 89 57",
+  whatsapp: "+34608998957",
+  whatsappMessage: "Hola, me gustaría solicitar presupuesto para un trabajo en mi domicilio.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Calle Dr. Collado Piña, 95, 02003 Albacete, España",
+    city: "Albacete",
+    province: "Toledo",
+    postalCode: "02003",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=2936317496059370610&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Instalaciones%20Iv%C3%A1n%20Ramos%20%4038.9875%2C-1.86315&z=16&output=embed",
+  coordinates: {
+    lat: 38.9875,
+    lng: -1.86315
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - miércoles",
+      hours: "8:00–21:00"
+    },
+    {
+      days: "jueves",
+      hours: "8:00–20:00"
+    },
+    {
+      days: "viernes",
+      hours: "8:00–14:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 63,
+    url: "https://maps.google.com/?cid=2936317496059370610&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Raúl Plá",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Contactamos con Ivan debido a sus buenas reseñas en internet y fue todo un acierto. Un magnífico profesional, buena comunicación en todo momento y muy agradable.",
+        date: "Hace 6 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "Alberto Grande",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Electricista de los que ya van quedando pocos... Iván es serio, rápido, sus precios son razonables y encima, es buena gente. Lo recomiendo 100%.",
+        date: "Hace 4 meses"
       },
       {
-        author: "Melanie Ponce",
+        author: "Ricardo Moreno",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "100% recomendable. Nosotros quedamos encantados con él. Demostró ser muy profesional, eficaz y rápido.",
+        date: "Hace 5 meses"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Agrado Podio",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Iván fontanero super rápido muy forman muy contento lo recomiendo una maquina",
+        date: "Hace 3 semanas"
       },
-    ],
+      {
+        author: "Jesus Valero",
+        rating: 5,
+        text: "100% recomendable.\nUn gran profesional , rápido y eficaz.",
+        date: "Hace 3 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "electricidad",
+      name: "Instalaciones Eléctricas",
+      description: "Realizamos todo tipo de instalaciones eléctricas nuevas y reparación de averías en tu hogar o negocio. Montaje y reparación de cuadros eléctricos, cambio de mecanismos, iluminación LED y emisión de boletines eléctricos. Trabajo profesional con materiales homologados y cumplimiento normativo.",
+      benefits: [
+        "Reparación de averías eléctricas urgentes",
+        "Instalación de cuadros eléctricos y automatismos",
+        "Boletines eléctricos certificados"
+      ],
+      icon: "Zap"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "fontaneria",
+      name: "Fontanería Urgente",
+      description: "Servicio rápido de fontanería para reparación de fugas, instalación de grifería, calentadores y calderas. Desatascos de tuberías, cambio de sanitarios y solución de cualquier problema de fontanería. Atendemos emergencias con desplazamiento inmediato.",
+      benefits: [
+        "Reparación urgente de fugas y goteos",
+        "Instalación de calentadores y calderas",
+        "Desatascos y limpieza de tuberías"
+      ],
+      icon: "Droplet"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "reformas",
+      name: "Reformas Integrales",
+      description: "Reformas completas de cocinas, baños y viviendas llave en mano. Nos encargamos de todo el proyecto desde el diseño hasta los acabados finales, con coordinación de todos los gremios. Presupuesto cerrado sin sorpresas y plazos de entrega garantizados.",
+      benefits: [
+        "Reforma completa sin preocupaciones",
+        "Presupuesto cerrado desde el inicio",
+        "Coordinación de todos los trabajos"
+      ],
+      icon: "Hammer"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "climatizacion",
+      name: "Climatización",
+      description: "Instalación y reparación de sistemas de aire acondicionado y calefacción. Montaje de splits, equipos de conductos, calderas de gas y sistemas de aerotermia. Mantenimiento preventivo y reparación de averías para que tu sistema funcione siempre de forma eficiente.",
+      benefits: [
+        "Instalación de aire acondicionado y calefacción",
+        "Reparación rápida de averías",
+        "Mantenimiento y puesta a punto"
+      ],
+      icon: "Wind"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "pintura",
+      name: "Pintura y Decoración",
+      description: "Servicio profesional de pintura interior y exterior para tu hogar o negocio. Alisado de paredes, empapelados, efectos decorativos y tratamiento de humedades. Trabajamos con pinturas de máxima calidad y dejamos tu espacio impecable con protección de muebles y limpieza final.",
+      benefits: [
+        "Pintura interior y exterior de calidad",
+        "Tratamiento de humedades y alisados",
+        "Limpieza total al finalizar"
+      ],
+      icon: "Paintbrush"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "cerrajeria",
+      name: "Cerrajería 24h",
+      description: "Servicio de cerrajería urgente para apertura de puertas, cambio de cerraduras y bombines de seguridad. Instalación de sistemas de control de acceso, puertas blindadas y acorazadas. Disponibilidad inmediata para emergencias y bloqueos.",
+      benefits: [
+        "Apertura de puertas sin daños",
+        "Cambio de cerraduras y bombines",
+        "Servicio urgente 24 horas"
+      ],
+      icon: "Key"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "averias",
+      name: "Reparación de Averías",
+      description: "Atendemos todo tipo de averías domésticas urgentes: eléctricas, de fontanería, electrodomésticos y más. Diagnóstico rápido del problema y solución inmediata con desplazamiento a tu domicilio. Servicio profesional para que vuelvas a la normalidad cuanto antes.",
+      benefits: [
+        "Diagnóstico rápido y preciso",
+        "Solución inmediata de averías",
+        "Desplazamiento a domicilio"
+      ],
+      icon: "Zap"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "mantenimiento",
+      name: "Mantenimiento del Hogar",
+      description: "Servicio integral de mantenimiento para tu vivienda o comunidad de vecinos. Revisiones periódicas de instalaciones eléctricas, fontanería, climatización y elementos comunes. Prevención de averías y mayor durabilidad de tus instalaciones.",
+      benefits: [
+        "Revisiones preventivas periódicas",
+        "Ahorro en reparaciones futuras",
+        "Mayor vida útil de instalaciones"
+      ],
+      icon: "Hammer"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta por teléfono",
+      description: "Llámanos al 608 99 89 57 o escríbenos por WhatsApp. Cuéntanos qué necesitas: avería urgente, instalación nueva o reforma. Te atendemos personalmente y con buena comunicación desde el primer momento."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Visita y presupuesto cerrado",
+      description: "Nos desplazamos a tu domicilio en Albacete para valorar el trabajo personalmente. Te damos un presupuesto detallado y cerrado sin sorpresas, con precios razonables y explicación clara de todo lo que incluye."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Ejecución rápida y profesional",
+      description: "Realizamos el trabajo de forma eficaz y rápida, con materiales de calidad y acabados profesionales. Protegemos tu hogar, trabajamos con limpieza y te mantenemos informado en todo momento del avance."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Garantía y factura",
+      description: "Entregamos el trabajo terminado, limpio y funcionando perfectamente. Te damos factura detallada y garantía de todos nuestros trabajos. Seguimiento posterior para asegurar tu total satisfacción."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "5 estrellas en Google con 63 reseñas",
+      description: "Nuestros clientes nos avalan con una valoración perfecta de 5 estrellas. Destacan nuestra rapidez, profesionalidad, precios razonables y trato agradable. Somos electricistas y fontaneros de los que ya van quedando pocos: serios, eficaces y de confianza total.",
+      icon: "Star"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Servicio rápido y eficaz",
+      description: "La rapidez es una de nuestras señas de identidad según nuestros clientes. Atendemos urgencias con desplazamiento inmediato, diagnosticamos el problema rápidamente y lo solucionamos de forma eficaz. No te hacemos esperar ni damos largas innecesarias.",
+      icon: "Clock"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Profesional serio y de confianza",
+      description: "Iván es un profesional serio que mantiene buena comunicación en todo momento. Cumplimos los plazos acordados, trabajamos con limpieza y respeto por tu hogar, y nos responsabilizamos totalmente de cada trabajo. Puedes confiar en nosotros sin preocupaciones.",
+      icon: "Award"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Precios razonables y transparentes",
+      description: "Ofrecemos precios justos y razonables sin renunciar a la calidad del servicio. Presupuestos cerrados sin sorpresas, explicación clara de cada partida y factura detallada. Buena relación calidad-precio que nuestros clientes valoran y recomiendan.",
+      icon: "CheckCircle"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Iván Ramos",
+      role: "Electricista y Fontanero",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Profesionales del hogar comprometidos con la calidad. En Instalaciones Iván Ramos resolvemos cualquier problema de tu casa con rapidez, garantía y precios justos."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Instalaciones Iván Ramos - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "Instalaciones Iván Ramos - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Instalaciones Iván Ramos - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Instalaciones Iván Ramos - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "Instalaciones Iván Ramos - Imagen 5"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Instalaciones Iván Ramos - Imagen 6"
+    },
+    {
+      src: "/images/gallery/7.webp",
+      alt: "Instalaciones Iván Ramos - Imagen 7"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Cuánto tarda Instalaciones Iván Ramos en atender una urgencia?",
+      answer: "Atendemos urgencias con la máxima rapidez posible. Nuestros clientes destacan que somos muy rápidos y eficaces en sus reseñas. Cuando nos llamas al 608 99 89 57, evaluamos tu caso y nos desplazamos inmediatamente si es una avería urgente. En la mayoría de casos podemos estar en tu domicilio en Albacete el mismo día."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Qué zona de Albacete cubre el servicio?",
+      answer: "Instalaciones Iván Ramos ofrece servicio a domicilio en toda la ciudad de Albacete y alrededores. Nos desplazamos sin problema a cualquier punto para realizar tanto trabajos urgentes como proyectos planificados. Llámanos y confirmamos disponibilidad en tu zona específica."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Cómo son los precios de Instalaciones Iván Ramos?",
+      answer: "Nuestros precios son razonables y competitivos, como destacan nuestros clientes en las 63 reseñas de 5 estrellas en Google. Siempre damos presupuesto cerrado antes de empezar cualquier trabajo, sin sorpresas ni costes ocultos. Te explicamos claramente qué incluye cada partida y trabajamos con total transparencia."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué servicios ofrece además de electricidad y fontanería?",
+      answer: "Aunque somos especialistas en electricidad y fontanería, en Instalaciones Iván Ramos ofrecemos un servicio integral para tu hogar: reformas completas, climatización, pintura, cerrajería y mantenimiento general. Esto nos permite resolver cualquier necesidad de tu vivienda con un único profesional de confianza, coordinando todos los trabajos necesarios."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Emiten boletines eléctricos y certificados?",
+      answer: "Sí, emitimos todos los boletines eléctricos y certificados necesarios para legalizar tus instalaciones. Realizamos el trabajo cumpliendo toda la normativa vigente y tramitamos la documentación oficial. Es fundamental para la seguridad de tu hogar y para cumplir con las exigencias legales."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Por qué tiene tan buenas reseñas en Google?",
+      answer: "Instalaciones Iván Ramos tiene 5 estrellas con 63 reseñas en Google porque trabajamos con seriedad, rapidez y profesionalidad. Nuestros clientes destacan la buena comunicación, los precios razonables, la eficacia y el trato agradable. Nos importa que cada cliente quede 100% satisfecho y lo recomendamos con orgullo a sus conocidos."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Dan garantía de los trabajos realizados?",
+      answer: "Sí, todos nuestros trabajos incluyen garantía por escrito. Utilizamos materiales de calidad homologados y realizamos las instalaciones siguiendo las mejores prácticas profesionales. Si surge cualquier problema relacionado con nuestro trabajo, lo solucionamos sin coste adicional. Además emitimos factura detallada de todos los servicios."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Puedo pedir presupuesto sin compromiso?",
+      answer: "Por supuesto, puedes solicitar presupuesto sin ningún compromiso. Llama al 608 99 89 57 y nos desplazamos a tu domicilio en Albacete para valorar el trabajo personalmente. Te damos un presupuesto detallado y cerrado, y tú decides si quieres que lo realicemos. No hay presión ni compromisos, solo profesionalidad y transparencia."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Instalaciones Iván Ramos",
+    defaultTitle: "Electricista y Fontanero en Albacete | Iván Ramos",
+    defaultDescription: "Electricista y fontanero profesional en Albacete. Servicio urgente a domicilio, reformas, climatización y cerrajería. 5★ en Google. Llama al 608 99 89 57",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "electricista Albacete",
+      "fontanero Albacete",
+      "Instalaciones Iván Ramos",
+      "electricista urgente Albacete",
+      "fontanero urgente Albacete",
+      "reformas Albacete",
+      "instalaciones eléctricas Albacete",
+      "reparación fontanería Albacete",
+      "climatización Albacete",
+      "cerrajero Albacete",
+      "electricista a domicilio Albacete",
+      "fontanero 24 horas Albacete"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Instalaciones Iván Ramos",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Calle Dr. Collado Piña, 95, 02003 Albacete, España, Albacete, Toledo"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Profesional del",
+    "Hogar",
+    "en Albacete"
+  ],
+  heroDescription: "Electricista y fontanero profesional en Albacete con servicio a domicilio inmediato. Especialistas en reparaciones urgentes, instalaciones eléctricas, fontanería y reformas completas. Atención personalizada, presupuestos cerrados y trabajo garantizado.",
+  specialty: "Electricidad y Fontanería",
+  ctaLabel: "Tu Hogar",
+  ctaHeadline: "¿Necesitas un electricista o fontanero ahora?",
+  ctaDescription: "Llámanos al 608 99 89 57 y solucionamos tu problema hoy mismo. Servicio rápido, profesional y con garantía en Albacete.",
+  statsLabel: "Trabajos",
+  schemaType: "HomeAndConstructionBusiness",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
-    servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesTitle: "Lo que hacemos por ti",
+    servicesDescription: "Soluciones profesionales para tu vehículo y hogar con garantía y precios transparentes.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
-    processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
+    processTitle: "Tu presupuesto en 4 pasos",
+    processDescription: "Un proceso claro y transparente para tu tranquilidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Confianza y profesionalidad",
+    whyUsDescription: "Profesionales certificados, precios sin sorpresas y garantía en todos nuestros trabajos.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
-    galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    reviewsTitle: "Lo que dicen nuestros clientes",
+    galleryLabel: "Trabajos",
+    galleryTitle: "Nuestros trabajos realizados",
+    galleryDescription: "Ejemplos de trabajos que hemos realizado para nuestros clientes",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros clientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales cualificados",
+    teamDescription: "Experiencia y compromiso al servicio de nuestros clientes"
+  }
 }
 
 export type Clinic = typeof clinic
